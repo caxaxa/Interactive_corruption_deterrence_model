@@ -1,5 +1,182 @@
-# Interactive_corruption_deterrence_model
-Here you can play with the Interactive corruption deterrence model from my research
+<html><head><style type="text/css">pre { margin: 1px }
+			.fmt0 {  } /* normal */
+			.fmt1 {  } /* background */
+			.fmt2 { background-color: #ffcabf; } /* line:error */
+			.fmt3 { background-color: #fffbbf; } /* line:warning */
+			.fmt4 { background-color: #bfd6ff; } /* line:badbox */
+			.fmt5 {  } /* line:bookmark */
+			.fmt6 {  } /* line:bookmark0 */
+			.fmt7 {  } /* line:bookmark1 */
+			.fmt8 {  } /* line:bookmark2 */
+			.fmt9 {  } /* line:bookmark3 */
+			.fmt10 {  } /* line:bookmark4 */
+			.fmt11 {  } /* line:bookmark5 */
+			.fmt12 {  } /* line:bookmark6 */
+			.fmt13 {  } /* line:bookmark7 */
+			.fmt14 {  } /* line:bookmark8 */
+			.fmt15 {  } /* line:bookmark9 */
+			.fmt16 { color: #555580; } /* magicComment */
+			.fmt17 { background-color: #a8cf83; } /* commentTodo */
+			.fmt18 { color: #808080; } /* comment */
+			.fmt19 { color: #800000; } /* keyword */
+			.fmt20 { font-weight: 700;color: #0095ff; } /* extra-keyword */
+			.fmt21 { color: #808000; } /* math-keyword */
+			.fmt22 { border-bottom: 1px solid #0000ff;color: #0000ff; } /* link */
+			.fmt23 { font-weight: 700;color: #0055ff; } /* align-ampersand */
+			.fmt24 { color: #008080; } /* verbatim */
+			.fmt25 { color: #800000; } /* sweave-block */
+			.fmt26 { font-weight: 700;color: #0095ff; } /* sweave-delimiter */
+			.fmt27 { color: #800000; } /* pweave-block */
+			.fmt28 { font-weight: 700;color: #0095ff; } /* pweave-delimiter */
+			.fmt29 { color: #804000; } /* picture */
+			.fmt30 { color: #c06000; } /* picture-keyword */
+			.fmt31 { font-weight: 700;background-color: #ffff7f; } /* braceMatch */
+			.fmt32 { font-weight: 700;color: #ffff7f;background-color: #c00000; } /* braceMismatch */
+			.fmt33 { color: #000000;background-color: #ffef0b; } /* search */
+			.fmt34 { color: #008000; } /* numbers */
+			.fmt35 { color: #509600; } /* math-delimiter */
+			.fmt36 { color: #ff0000; } /* text */
+			.fmt37 { color: #ff0088; } /* escapeseq */
+			.fmt38 { border-bottom: 1px dashed #ff0000; } /* spellingMistake */
+			.fmt39 { border-bottom: 1px dashed #008000; } /* wordRepetition */
+			.fmt40 { border-bottom: 1px dashed #008000; } /* wordRepetitionLongRange */
+			.fmt41 { text-decoration: line-through; } /* badWord */
+			.fmt42 { border-bottom: 1px dashed #000080; } /* grammarMistake */
+			.fmt43 { background-color: #00ffa0; } /* grammarMistakeSpecial1 */
+			.fmt44 { background-color: #00c0ff; } /* grammarMistakeSpecial2 */
+			.fmt45 { background-color: #00ff00; } /* grammarMistakeSpecial3 */
+			.fmt46 { background-color: #c8ff61; } /* grammarMistakeSpecial4 */
+			.fmt47 { background-color: #ffbf9f; } /* latexSyntaxMistake */
+			.fmt48 { font-style: italic;color: #0000ff; } /* temporaryCodeCompletion */
+			.fmt49 { color: #000080; } /* environment */
+			.fmt50 { color: #008000; } /* referencePresent */
+			.fmt51 { border-bottom: 1px dashed #008000;color: #008000; } /* referenceMissing */
+			.fmt52 { border-bottom: 1px dashed #800080;color: #800080; } /* referenceMultiple */
+			.fmt53 { color: #008000; } /* citationPresent */
+			.fmt54 { border-bottom: 1px dashed #008000;color: #008000; } /* citationMissing */
+			.fmt55 { color: #008000; } /* packagePresent */
+			.fmt56 { border-bottom: 1px dashed #008000;color: #008000; } /* packageMissing */
+			.fmt57 { font-weight: 700;color: #000000; } /* structure */
+			.fmt58 { background-color: #eeeeff; } /* current */
+			.fmt59 { background-color: #b2d8ff; } /* selection */
+			.fmt60 { background-color: #ffaaaa; } /* replacement */
+			.fmt61 { text-decoration: line-through;background-color: #ffaaaa; } /* diffDelete */
+			.fmt62 { background-color: #aaffaa; } /* diffAdd */
+			.fmt63 { background-color: #ffff50; } /* diffReplace */
+			.fmt64 { background-color: #ddffcc; } /* previewSelection */
+			.fmt65 { font-weight: 700;color: #0095ff; } /* txs-test */
+			.fmt66 { font-weight: 700; } /* txs-test-summary */
+			.fmt67 { color: #008000; } /* txs-test-pass */
+			.fmt68 { color: #c00000; } /* txs-test-fail */
+			.fmt69 { color: #ea8800; } /* txs-test-warn */
+			.fmt70 { color: #808000; } /* txs-test-qdebug */
+			.fmt71 { color: #ffa500; } /* dtx:guard */
+			.fmt72 { font-weight: 700;color: #006400; } /* dtx:macro */
+			.fmt73 { color: #008080; } /* dtx:verbatim */
+			.fmt74 { color: #cc8100; } /* dtx:specialchar */
+			.fmt75 { font-weight: 700;color: #10c010; } /* dtx:commands */
+			.fmt76 { color: #b200ff; } /* lua:keyword */
+			.fmt77 { color: #808080; } /* lua:comment */
+			.fmt78 { color: #804000; } /* asymptote:block */
+			.fmt79 { color: #800080; } /* asymptote:keyword */
+			.fmt80 { color: #808000; } /* asymptote:type */
+			.fmt81 { color: #008000; } /* asymptote:numbers */
+			.fmt82 { color: #000080; } /* asymptote:string */
+			.fmt83 { color: #808080; } /* asymptote:comment */
+			.fmt84 { color: #808080; } /* qtscript:comment */
+			.fmt85 { color: #008000; } /* qtscript:string */
+			.fmt86 { color: #000080; } /* qtscript:number */
+			.fmt87 { color: #808000; } /* qtscript:keyword */
+			.fmt88 { color: #800000; } /* qtscript:txs-variable */
+			.fmt89 { font-style: italic; } /* qtscript:txs-function */
+			.fmt90 { background-color: #ffff7f; } /* preedit */
+		</style></head><body><pre><span class="fmt19">\documentclass</span>[12pt, a4paper]{<span class="fmt55">article</span>} </pre>
+		<pre><span class="fmt19">\title</span>{<span class="fmt18">%</span> </pre>
+		<pre>	Modelling Domestic Corruption Deterrence Through Self-Reporting and Collaborations </pre>
+		<pre>} </pre>
+		<pre> </pre>
+		<pre><span class="fmt19">\author</span>{Lucas Alves Chacha} </pre>
+		<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">document</span></span><span class="fmt20">}</span> </pre>
+		<pre><span class="fmt19">\maketitle</span> </pre>
+		<pre>	 </pre>
+		<pre>	The game arises when two agents, the government bureaucrat and private entrepreneur, decide whether to play or not a strategy of corruption (cooperation), constrained by probabilities of being detected and later convicted.  </pre>
+		<pre>	 </pre>
+		<pre>	Given the above conditions, let:  </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34">B</span><span class="fmt35">$</span> = Bureaucrat; </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34">E</span><span class="fmt35">$</span> = Entrepreneur; </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt21">\pi</span><span class="fmt35">$</span> = Advantage from corruption; </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34">b</span><span class="fmt35">$</span> = Bribe; and  </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34">c</span><span class="fmt35">$</span> = Cost of the bureaucrat for generating <span class="fmt35">$</span><span class="fmt21">\pi</span><span class="fmt35">$</span>, </pre>
+		<pre>	 </pre>
+		<pre>	where <span class="fmt35">$</span><span class="fmt21">\pi</span><span class="fmt34">>0</span><span class="fmt35">$</span> is the gain of the entrepreneur from corruption and <span class="fmt35">$</span><span class="fmt34">b</span><span class="fmt35">$</span> is the gain of the bureaucrat, such that <span class="fmt35">$</span><span class="fmt34">0&lt;b&lt;</span><span class="fmt21">\pi</span><span class="fmt35">$</span>. Let the enforcement variables be:  </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt21">\alpha</span><span class="fmt35">$</span> = probability of detection; and </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt21">\beta</span><span class="fmt35">$</span> = probability of conviction.  </pre>
+		<pre>	 </pre>
+		<pre>	Finally, for <span class="fmt35">$</span><span class="fmt34">i={B,E}</span><span class="fmt35">$</span>, let: </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34">S_i</span><span class="fmt35">$</span> = Sanction; and  </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34">F</span><span class="fmt35">$</span> = Fine. </pre>
+		<pre>	 </pre>
+		<pre>	For the moment, it is considered that <span class="fmt35">$</span><span class="fmt34">S_i</span><span class="fmt35">$</span> is given by the gains of each player with addition of <span class="fmt35">$</span><span class="fmt34">F</span><span class="fmt35">$</span> which is the same for the payer and the receiver. Consequently, <span class="fmt35">$</span><span class="fmt34">S_E</span><span class="fmt34"> </span><span class="fmt34">=</span><span class="fmt34"> </span><span class="fmt21">\pi</span><span class="fmt34"> </span><span class="fmt34">+F</span><span class="fmt35">$</span> and <span class="fmt35">$</span><span class="fmt34">S_B</span><span class="fmt34"> </span><span class="fmt34">=</span><span class="fmt34"> </span><span class="fmt34">b</span><span class="fmt34"> </span><span class="fmt34">+F</span><span class="fmt35">$</span> </pre>
+		<pre>	 </pre>
+		<pre>	In order to derive the agent's decision rule, and for the sake of simplicity let, </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34">p_k</span><span class="fmt35">$</span> = probability that <span class="fmt35">$</span><span class="fmt34">k</span><span class="fmt35">$</span> happens for <span class="fmt35">$</span><span class="fmt34">k</span><span class="fmt34"> </span><span class="fmt34">={</span><span class="fmt34"> </span><span class="fmt21">\pi</span><span class="fmt34">,</span><span class="fmt34"> </span><span class="fmt34">F,</span><span class="fmt34"> </span><span class="fmt34">b}</span><span class="fmt35">$</span>, </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34">p_F</span><span class="fmt34"> </span><span class="fmt21">\equiv</span><span class="fmt34"> </span><span class="fmt21">\alpha</span><span class="fmt34"> </span><span class="fmt21">\beta</span><span class="fmt35">$</span> and, </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34">p_{b}</span><span class="fmt34"> </span><span class="fmt34">=</span><span class="fmt34"> </span><span class="fmt34">p_{</span><span class="fmt21">\pi</span><span class="fmt34">}</span><span class="fmt34"> </span><span class="fmt21">\equiv</span><span class="fmt34"> </span><span class="fmt34">(1</span><span class="fmt34"> </span><span class="fmt34">-</span><span class="fmt34"> </span><span class="fmt21">\alpha</span><span class="fmt34"> </span><span class="fmt21">\beta</span><span class="fmt34">)</span><span class="fmt35">$</span>. </pre>
+		<pre>	 </pre>
+		<pre>	Under risk neutrality, the agents' utilities <span class="fmt35">$</span><span class="fmt34">U_i</span><span class="fmt35">$</span> are given by the the differences between the costs and the expected benefits for each agent: </pre>
+		<pre>	<span class="fmt35">$$</span><span class="fmt34">U_E</span><span class="fmt34"> </span><span class="fmt21">\equiv</span><span class="fmt34"> </span><span class="fmt34">-b</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">(1-</span><span class="fmt21">\alpha</span><span class="fmt34"> </span><span class="fmt21">\beta</span><span class="fmt34">)</span><span class="fmt34"> </span><span class="fmt21">\pi</span><span class="fmt34"> </span><span class="fmt34">-</span><span class="fmt34"> </span><span class="fmt21">\alpha</span><span class="fmt34"> </span><span class="fmt21">\beta</span><span class="fmt34"> </span><span class="fmt34">F</span><span class="fmt34"> </span><span class="fmt34">=</span><span class="fmt34"> </span><span class="fmt34">-b</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">p_</span><span class="fmt21">\pi</span><span class="fmt34"> </span><span class="fmt34">-</span><span class="fmt34"> </span><span class="fmt21">\pi</span><span class="fmt34"> </span><span class="fmt34">p_F</span><span class="fmt34"> </span><span class="fmt34">F,</span><span class="fmt35">$$</span>and <span class="fmt35">$$</span><span class="fmt34">U_B</span><span class="fmt34"> </span><span class="fmt21">\equiv</span><span class="fmt34"> </span><span class="fmt34">-c</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">(1-</span><span class="fmt21">\alpha</span><span class="fmt34"> </span><span class="fmt21">\beta</span><span class="fmt34">)</span><span class="fmt34"> </span><span class="fmt34">b</span><span class="fmt34"> </span><span class="fmt34">-</span><span class="fmt34"> </span><span class="fmt21">\alpha</span><span class="fmt34"> </span><span class="fmt21">\beta</span><span class="fmt34"> </span><span class="fmt34">F=</span><span class="fmt34"> </span><span class="fmt34">-c</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">p_b</span><span class="fmt34"> </span><span class="fmt34">b</span><span class="fmt34"> </span><span class="fmt34">-</span><span class="fmt34"> </span><span class="fmt34">p_F</span><span class="fmt34"> </span><span class="fmt34">F.</span><span class="fmt35">$$</span>  </pre>
+		<pre>	 </pre>
+		<pre>	Let us define some profitable bribery as being the fixed cost paid by agents which make their utilities at least greater than zero: </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">equation</span></span><span class="fmt20">}</span> </pre>
+		<pre><span class="fmt34">	</span><span class="fmt34">b</span><span class="fmt34"> </span><span class="fmt34">></span><span class="fmt34">  </span><span class="fmt34">p_</span><span class="fmt21">\pi</span><span class="fmt34"> </span><span class="fmt21">\pi</span><span class="fmt34">-</span><span class="fmt34">  </span><span class="fmt34">p_F</span><span class="fmt34"> </span><span class="fmt34">F,</span> </pre>
+		<pre><span class="fmt34">	</span><span class="fmt21">\label</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt50">profE</span></span><span class="fmt34">}</span> </pre>
+		<pre><span class="fmt34">	</span><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">equation</span></span><span class="fmt20">}</span> </pre>
+		<pre>	and </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">equation</span></span><span class="fmt20">}</span> </pre>
+		<pre><span class="fmt34">	</span><span class="fmt34">c</span><span class="fmt34"> </span><span class="fmt34">></span><span class="fmt34">   </span><span class="fmt34">p_b</span><span class="fmt34"> </span><span class="fmt34">b</span><span class="fmt34"> </span><span class="fmt34">-</span><span class="fmt34"> </span><span class="fmt34">p_F</span><span class="fmt34"> </span><span class="fmt34">F,</span> </pre>
+		<pre><span class="fmt34">	</span><span class="fmt21">\label</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt50">profB</span></span><span class="fmt34">}</span> </pre>
+		<pre><span class="fmt34">	</span><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">equation</span></span><span class="fmt20">}</span> </pre>
+		<pre>	 </pre>
+		<pre>	If fine reductions are feasible and not exploitable, then corruption is performed if profitability conditions are met. In order to calculate them in a staged game with incomplete information (<span class="fmt35">$</span><span class="fmt21">\gamma</span><span class="fmt34">_i</span><span class="fmt34"> </span><span class="fmt34">></span><span class="fmt34"> </span><span class="fmt34">0</span><span class="fmt35">$</span> and <span class="fmt35">$</span><span class="fmt21">\omega</span><span class="fmt34">_i</span><span class="fmt34"> </span><span class="fmt34">></span><span class="fmt34"> </span><span class="fmt34">0</span><span class="fmt35">$</span>) and distinct rules for fine reductions <span class="fmt35">$</span><span class="fmt34">R</span><span class="fmt35">$</span> and <span class="fmt35">$</span><span class="fmt34">P</span><span class="fmt35">$</span>, let: </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34">p_{F_i}</span><span class="fmt34"> </span><span class="fmt34">=</span><span class="fmt34"> </span><span class="fmt34">f</span><span class="fmt34"> </span><span class="fmt34">(</span><span class="fmt21">\alpha</span><span class="fmt34">,</span><span class="fmt34"> </span><span class="fmt21">\beta</span><span class="fmt34">,</span><span class="fmt34"> </span><span class="fmt21">\gamma</span><span class="fmt34">_E</span><span class="fmt34"> </span><span class="fmt34">,</span><span class="fmt34"> </span><span class="fmt21">\gamma</span><span class="fmt34">_B,</span><span class="fmt34"> </span><span class="fmt21">\omega</span><span class="fmt34">_B,</span><span class="fmt34"> </span><span class="fmt21">\omega</span><span class="fmt34">_E,</span><span class="fmt34"> </span><span class="fmt34">P,</span><span class="fmt34"> </span><span class="fmt34">R,</span><span class="fmt34"> </span><span class="fmt34">p,</span><span class="fmt34"> </span><span class="fmt34">r)</span><span class="fmt34"> </span><span class="fmt34">,</span><span class="fmt35">$</span>  </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34">p_{F_E}</span><span class="fmt34"> </span><span class="fmt21">\equiv</span><span class="fmt34"> </span><span class="fmt21">\alpha</span><span class="fmt34"> </span><span class="fmt21">\Gamma</span><span class="fmt34"> </span><span class="fmt34">(</span><span class="fmt21">\Omega</span><span class="fmt34"> </span><span class="fmt21">\beta</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">(1-</span><span class="fmt21">\omega</span><span class="fmt34">_B)</span><span class="fmt21">\omega</span><span class="fmt34">_E</span><span class="fmt34"> </span><span class="fmt34">P</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">(1-</span><span class="fmt34"> </span><span class="fmt21">\omega</span><span class="fmt34">_E)</span><span class="fmt21">\omega</span><span class="fmt34">_B</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt21">\omega</span><span class="fmt34">_E</span><span class="fmt34"> </span><span class="fmt21">\omega</span><span class="fmt34">_B</span><span class="fmt34"> </span><span class="fmt34">p)</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">(1-</span><span class="fmt21">\gamma</span><span class="fmt34">_B)</span><span class="fmt21">\gamma</span><span class="fmt34">_E</span><span class="fmt34"> </span><span class="fmt34">R</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">(1-</span><span class="fmt21">\gamma</span><span class="fmt34">_E)</span><span class="fmt21">\gamma</span><span class="fmt34">_B</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt21">\gamma</span><span class="fmt34">_E</span><span class="fmt34"> </span><span class="fmt21">\gamma</span><span class="fmt34">_B</span><span class="fmt34"> </span><span class="fmt34">r</span><span class="fmt35">$</span> ,  </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34">p_{F_B}</span><span class="fmt34"> </span><span class="fmt21">\equiv</span><span class="fmt34"> </span><span class="fmt21">\alpha</span><span class="fmt34"> </span><span class="fmt21">\Gamma</span><span class="fmt34"> </span><span class="fmt34">(</span><span class="fmt21">\Omega</span><span class="fmt34"> </span><span class="fmt21">\beta</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">(1-</span><span class="fmt21">\omega</span><span class="fmt34">_B)</span><span class="fmt21">\omega</span><span class="fmt34">_E</span><span class="fmt34">  </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">(1-</span><span class="fmt34"> </span><span class="fmt21">\omega</span><span class="fmt34">_E)</span><span class="fmt21">\omega</span><span class="fmt34">_B</span><span class="fmt34"> </span><span class="fmt34">P</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt21">\omega</span><span class="fmt34">_E</span><span class="fmt34"> </span><span class="fmt21">\omega</span><span class="fmt34">_B</span><span class="fmt34"> </span><span class="fmt34">p)</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">(1-</span><span class="fmt21">\gamma</span><span class="fmt34">_B)</span><span class="fmt21">\gamma</span><span class="fmt34">_E</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">(1-</span><span class="fmt21">\gamma</span><span class="fmt34">_E)</span><span class="fmt21">\gamma</span><span class="fmt34">_B</span><span class="fmt34"> </span><span class="fmt34">R</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt21">\gamma</span><span class="fmt34">_E</span><span class="fmt34"> </span><span class="fmt21">\gamma</span><span class="fmt34">_B</span><span class="fmt34"> </span><span class="fmt34">r</span><span class="fmt35">$</span> , </pre>
+		<pre>	 </pre>
+		<pre>	in the same way,  </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34">p_{</span><span class="fmt21">\pi</span><span class="fmt34">}=p_{b}</span><span class="fmt21">\equiv</span><span class="fmt34"> </span><span class="fmt21">\Gamma</span><span class="fmt34"> </span><span class="fmt34">[(1-</span><span class="fmt21">\alpha</span><span class="fmt34">)</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt21">\alpha</span><span class="fmt34"> </span><span class="fmt21">\Omega</span><span class="fmt34"> </span><span class="fmt34">(1-</span><span class="fmt21">\beta</span><span class="fmt34">)</span><span class="fmt34"> </span><span class="fmt34">].</span><span class="fmt35">$</span> </pre>
+		<pre>	 </pre>
+		<pre>	Given that agents face the same problem of having a positive expected pay-off from collusion. Then, the constraints given by the positive probability of being reported may decrease expected pay-<span class="fmt38">offs</span> from corruption through bigger <span class="fmt40">expected</span> fines<span class="fmt35">$</span><span class="fmt34">p_{F_i}</span><span class="fmt34"> </span><span class="fmt34">F</span><span class="fmt35">$</span> and lower probability of going unpunished <span class="fmt35">$</span><span class="fmt34">p_{b}</span><span class="fmt35">$</span> and <span class="fmt35">$</span><span class="fmt34">p_</span><span class="fmt21">\pi</span><span class="fmt35">$</span> and receiving the advantage of corruption. Therefore, the decision rule for the entrepreneur can be expressed as:  </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt34">-b</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt21">\pi</span><span class="fmt34"> </span><span class="fmt21">\Gamma</span><span class="fmt34"> </span><span class="fmt34">[(1-</span><span class="fmt21">\alpha</span><span class="fmt34">)</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt21">\alpha</span><span class="fmt34"> </span><span class="fmt21">\Omega</span><span class="fmt34"> </span><span class="fmt34">(1-</span><span class="fmt21">\beta</span><span class="fmt34">)]</span><span class="fmt34"> </span><span class="fmt34">-</span><span class="fmt34"> </span><span class="fmt34">F</span><span class="fmt34"> </span><span class="fmt34">(</span><span class="fmt21">\alpha</span><span class="fmt34"> </span><span class="fmt21">\Gamma</span><span class="fmt34"> </span><span class="fmt34">(</span><span class="fmt21">\Omega</span><span class="fmt34"> </span><span class="fmt21">\beta</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">(1-</span><span class="fmt21">\omega</span><span class="fmt34">_B)</span><span class="fmt21">\omega</span><span class="fmt34">_E</span><span class="fmt34"> </span><span class="fmt34">P</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">(1-</span><span class="fmt34"> </span><span class="fmt21">\omega</span><span class="fmt34">_E)</span><span class="fmt21">\omega</span><span class="fmt34">_B</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt21">\omega</span><span class="fmt34">_E</span><span class="fmt34"> </span><span class="fmt21">\omega</span><span class="fmt34">_B</span><span class="fmt34"> </span><span class="fmt34">p)</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">(1-</span><span class="fmt21">\gamma</span><span class="fmt34">_B)</span><span class="fmt21">\gamma</span><span class="fmt34">_E</span><span class="fmt34"> </span><span class="fmt34">R</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">(1-</span><span class="fmt21">\gamma</span><span class="fmt34">_E)</span><span class="fmt21">\gamma</span><span class="fmt34">_B</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt21">\gamma</span><span class="fmt34">_E</span><span class="fmt34"> </span><span class="fmt21">\gamma</span><span class="fmt34">_B</span><span class="fmt34"> </span><span class="fmt34">r)</span><span class="fmt34"> </span><span class="fmt34">>0</span><span class="fmt34"> </span><span class="fmt34">,</span><span class="fmt35">$</span>  </pre>
+		<pre>	 </pre>
+		<pre>	and for the bureaucrat, </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt35">$</span><span class="fmt34"> </span><span class="fmt34">-c</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">b</span><span class="fmt34"> </span><span class="fmt21">\Gamma</span><span class="fmt34"> </span><span class="fmt34">[(1-</span><span class="fmt21">\alpha</span><span class="fmt34">)</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt21">\alpha</span><span class="fmt34"> </span><span class="fmt21">\Omega</span><span class="fmt34"> </span><span class="fmt34">(1-</span><span class="fmt21">\beta</span><span class="fmt34">)</span><span class="fmt34"> </span><span class="fmt34">-</span><span class="fmt34"> </span><span class="fmt34">F</span><span class="fmt34"> </span><span class="fmt34">(</span><span class="fmt21">\alpha</span><span class="fmt34"> </span><span class="fmt21">\Gamma</span><span class="fmt34"> </span><span class="fmt34">(</span><span class="fmt21">\Omega</span><span class="fmt34"> </span><span class="fmt21">\beta</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">(1-</span><span class="fmt21">\omega</span><span class="fmt34">_B)</span><span class="fmt21">\omega</span><span class="fmt34">_E</span><span class="fmt34">  </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">(1-</span><span class="fmt34"> </span><span class="fmt21">\omega</span><span class="fmt34">_E)</span><span class="fmt21">\omega</span><span class="fmt34">_B</span><span class="fmt34"> </span><span class="fmt34">P</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt21">\omega</span><span class="fmt34">_E</span><span class="fmt34"> </span><span class="fmt21">\omega</span><span class="fmt34">_B</span><span class="fmt34"> </span><span class="fmt34">p)</span><span class="fmt34"> </span><span class="fmt34">+</span> </pre>
+		<pre><span class="fmt34">	</span><span class="fmt34">(1-</span><span class="fmt21">\gamma</span><span class="fmt34">_B)</span><span class="fmt21">\gamma</span><span class="fmt34">_E</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">(1-</span><span class="fmt21">\gamma</span><span class="fmt34">_E)</span><span class="fmt21">\gamma</span><span class="fmt34">_B</span><span class="fmt34"> </span><span class="fmt34">R</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt21">\gamma</span><span class="fmt34">_E</span><span class="fmt34"> </span><span class="fmt21">\gamma</span><span class="fmt34">_B</span><span class="fmt34"> </span><span class="fmt34">r)</span><span class="fmt34"> </span><span class="fmt34">></span><span class="fmt34"> </span><span class="fmt34">0</span><span class="fmt34"> </span><span class="fmt34">.</span><span class="fmt35">$</span>  </pre>
+		<pre>	 </pre>
+		<pre>	Computing the indifference curves from the above conditions and comparing with the previous calculated ones, it is clear to see the deterrent effect of the combined policies when <span class="fmt35">$</span><span class="fmt21">\gamma</span><span class="fmt34">_i>0</span><span class="fmt35">$</span> and <span class="fmt35">$</span><span class="fmt21">\omega</span><span class="fmt34">_i>0</span><span class="fmt35">$</span>. The deterrence effect is given by the reduced set of combinations of the public enforcements in which corruption would be feasible.  </pre>
+		<pre>	 </pre>
+		<pre>	In order to address the effect of leniencies over corruption deterrence, let <span class="fmt35">$</span><span class="fmt21">\theta</span><span class="fmt34">_k</span><span class="fmt35">$</span> be the linear coefficient that relates the <span class="fmt35">$</span><span class="fmt34">k</span><span class="fmt35">$</span> rules of fine reduction <span class="fmt35">$</span><span class="fmt34">R</span><span class="fmt35">$</span> and <span class="fmt35">$</span><span class="fmt34">P</span><span class="fmt35">$</span> to the probability of self-reporting <span class="fmt35">$</span><span class="fmt21">\gamma</span><span class="fmt34">_i</span><span class="fmt35">$</span> and <span class="fmt35">$</span><span class="fmt21">\omega</span><span class="fmt34">_i</span><span class="fmt35">$</span>, in which <span class="fmt35">$</span><span class="fmt34">f'(</span><span class="fmt21">\theta</span><span class="fmt34">_k)&lt;0</span><span class="fmt35">$</span>, and <span class="fmt35">$</span><span class="fmt34">f''(</span><span class="fmt21">\theta</span><span class="fmt34">_k)=0</span><span class="fmt35">$</span> such that, <span class="fmt35">$$</span><span class="fmt21">\gamma</span><span class="fmt34">_i</span><span class="fmt34"> </span><span class="fmt34">=</span><span class="fmt34"> </span><span class="fmt21">\gamma</span><span class="fmt34">_{i0}</span><span class="fmt34"> </span><span class="fmt34">-</span><span class="fmt34"> </span><span class="fmt21">\theta</span><span class="fmt34">_R</span><span class="fmt34"> </span><span class="fmt34">R,</span><span class="fmt35">$$</span> and, <span class="fmt35">$$</span><span class="fmt21">\omega</span><span class="fmt34">_i</span><span class="fmt34"> </span><span class="fmt34">=</span><span class="fmt34"> </span><span class="fmt21">\omega</span><span class="fmt34">_{i0}</span><span class="fmt34"> </span><span class="fmt34">-</span><span class="fmt34"> </span><span class="fmt21">\theta</span><span class="fmt34">_P</span><span class="fmt34"> </span><span class="fmt34">P.</span><span class="fmt35">$$</span>  </pre>
+		<pre>	 </pre>
+		<pre>	The same can be applied to the effect of the leniencies post detection over the probability to self-report after <span class="fmt40">detection.</span> </pre>
+		<pre>	 </pre>
+		<pre>	PS: This coding uses a logistical function instead of the linear bounded <span class="fmt40">function</span> for <span class="fmt35">$</span><span class="fmt21">\gamma</span><span class="fmt34">_i</span><span class="fmt34"> </span><span class="fmt34">(</span><span class="fmt21">\gamma</span><span class="fmt34">_{i_0},R,</span><span class="fmt34"> </span><span class="fmt21">\theta</span><span class="fmt34">_R)</span><span class="fmt35">$</span> and <span class="fmt35">$</span><span class="fmt21">\omega</span><span class="fmt34">_i</span><span class="fmt34"> </span><span class="fmt34">(</span><span class="fmt21">\omega</span><span class="fmt34">_{i_0},P,</span><span class="fmt34"> </span><span class="fmt21">\theta</span><span class="fmt34">_P)</span><span class="fmt35">$</span> </pre>
+		<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">document</span></span><span class="fmt20">}</span> </pre></body></html>
 
 
 <!DOCTYPE html>
