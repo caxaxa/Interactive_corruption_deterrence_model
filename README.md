@@ -10,9 +10,11 @@ This is a preliminary interactive model of my research. You can find helpfull do
 
 
 <html lang="en">
-  
+ 
   <head>
-    
+
+## Agents' Indifference Curves for Corruption (y = Probability of being detected by the authority; x= Probability of being convicted by the judiciary)
+
       <meta charset="utf-8">
       <title>slider.py example</title>
       
