@@ -1,4 +1,83 @@
+## Modelling Domestic Corruption Deterrence Through Self-Reporting and Collaborations
 
+
+The game arises when two agents, the government bureaucrat and private entrepreneur, decide whether to play or not a strategy of corruption (cooperation), constrained by probabilities of being detected and later convicted. 
+ 
+ Given the above conditions, let: 
+ 
+$B$ = Bureaucrat;
+
+$E$ = Entrepreneur;
+
+$\pi$ = Advantage from corruption;
+
+$b$ = Bribe; and 
+
+$c$ = Cost of the bureaucrat for generating $\pi$,
+
+where $\pi>0$ is the gain of the entrepreneur from corruption and $b$ is the gain of the bureaucrat, such that $0<b<\pi$. Let the enforcement variables be: 
+
+$\alpha$ = probability of detection; and
+
+$\beta$ = probability of conviction. 
+
+Finally, for $i={B,E}$, let:
+
+$S_i$ = Sanction; and 
+
+$F$ = Fine.
+
+For the moment, it is considered that $S_i$ is given by the gains of each player with addition of $F$ which is the same for the payer and the receiver. Consequently, $S_E = \pi +F$ and $S_B = b +F$
+
+In order to derive the agent's decision rule, and for the sake of simplicity let,
+
+$p_k$ = probability that $k$ happens for $k ={ \pi, F, b}$,
+
+$p_F \equiv \alpha \beta$ and,
+
+$p_{b} = p_{\pi} \equiv (1 - \alpha \beta)$.
+
+Under risk neutrality, the agents' utilities $U_i$ are given by the the differences between the costs and the expected benefits for each agent:
+$$U_E \equiv -b + (1-\alpha \beta) \pi - \alpha \beta F = -b + p_\pi - \pi p_F F,$$and $$U_B \equiv -c + (1-\alpha \beta) b - \alpha \beta F= -c + p_b b - p_F F.$$ 
+
+Let us define some profitable bribery as being the fixed cost paid by agents which make their utilities at least greater than zero:
+
+\begin{equation}
+	b >  p_\pi \pi-  p_F F,
+\label{profE}
+\end{equation}
+and
+\begin{equation}
+c >   p_b b - p_F F,
+\label{profB}
+\end{equation}
+
+If fine reductions are feasible and not exploitable, then corruption is performed if profitability conditions are met. In order to calculate them in a staged game with incomplete information ($\gamma_i > 0$ and $\omega_i > 0$) and distinct rules for fine reductions $R$ and $P$, let:
+
+$p_{F_i} = f (\alpha, \beta, \gamma_E , \gamma_B, \omega_B, \omega_E, P, R, p, r) ,$ 
+$p_{F_E} \equiv \alpha \Gamma (\Omega \beta + (1-\omega_B)\omega_E P + (1- \omega_E)\omega_B + \omega_E \omega_B p) + (1-\gamma_B)\gamma_E R + (1-\gamma_E)\gamma_B + \gamma_E \gamma_B r$ , 
+$p_{F_B} \equiv \alpha \Gamma (\Omega \beta + (1-\omega_B)\omega_E  + (1- \omega_E)\omega_B P + \omega_E \omega_B p) + (1-\gamma_B)\gamma_E + (1-\gamma_E)\gamma_B R + \gamma_E \gamma_B r$ ,
+
+in the same way, 
+
+$p_{\pi}=p_{b}\equiv \Gamma [(1-\alpha) + \alpha \Omega (1-\beta) ].$
+
+ Given that agents face the same problem of having a positive expected pay-off from collusion. Then, the constraints given by the positive probability of being reported may decrease expected pay-offs from corruption through bigger expected fines$p_{F_i} F$ and lower probability of going unpunished $p_{b}$ and $p_\pi$ and receiving the advantage of corruption. Therefore, the decision rule for the entrepreneur can be expressed as: 
+ 
+$ -b + \pi \Gamma [(1-\alpha) + \alpha \Omega (1-\beta)] - F (\alpha \Gamma (\Omega \beta + (1-\omega_B)\omega_E P + (1- \omega_E)\omega_B + \omega_E \omega_B p) + (1-\gamma_B)\gamma_E R + (1-\gamma_E)\gamma_B + \gamma_E \gamma_B r) >0 ,$ 
+
+and for the bureaucrat,
+
+$ -c + b \Gamma [(1-\alpha) + \alpha \Omega (1-\beta) - F (\alpha \Gamma (\Omega \beta + (1-\omega_B)\omega_E  + (1- \omega_E)\omega_B P + \omega_E \omega_B p) +
+  (1-\gamma_B)\gamma_E + (1-\gamma_E)\gamma_B R + \gamma_E \gamma_B r) > 0 .$ 
+
+Computing the indifference curves from the above conditions and comparing with the previous calculated ones, from Figure \ref{IC4} it is clear to see the deterrent effect of the combined policies when $\gamma_i>0$ and $\omega_i>0$. The deterrence effect is given by the reduced set of combinations of the public enforcements in which corruption would be feasible. 
+
+In order to address the effect of leniencies over corruption deterrence, let $\theta_k$ be the linear coefficient that relates the $k$ rules of fine reduction $R$ and $P$ to the probability of self-reporting $\gamma_i$ and $\omega_i$, in which $f'(\theta_k)<0$, and $f''(\theta_k)=0$ such that, $$\gamma_i = \gamma_{i0} - \theta_R R,$$ and, $$\omega_i = \omega_{i0} - \theta_P P.$$ 
+
+The same can be applied to the effect of the leniencies post detection over the probability to self-report after detection.
+
+PS: This coding uses a logistical function instead of the linear bounded function for $\gamma_i (\gamma_{i_0},R, \theta_R)$ and $\omega_i (\omega_{i_0},P, \theta_P)$
 
 
 <!DOCTYPE html>
