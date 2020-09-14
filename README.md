@@ -2,11 +2,11 @@
 
 This is a preliminary interactive model of my research. You can find helpfull documentation on the links bellow:
 
-####[Resumed Model](document.df)
+#### [Resumed Model](document.df)
 
-####[Article Draft](CHACHA -THE MODEL - GENERAL APPROACH.pdf)
+#### [Article Draft](CHACHA -THE MODEL - GENERAL APPROACH.pdf)
 
-####[Python Code](Interactive_corruption_deterrence_2)
+#### [Python Code](Interactive_corruption_deterrence_2)
 
 
 <html lang="en">
