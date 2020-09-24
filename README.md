@@ -6,7 +6,7 @@ This is a preliminary interactive model of my research. You can find helpfull do
 
 #### [Article Draft](CHACHA -THE MODEL - GENERAL APPROACH.pdf)
 
-#### [Python Code](Interactive_corruption_deterrence_2.ipynb)
+#### [Python Code](Interactive_corruption_deterrence_bokeh.ipynb)
 
 
 ## Agents' Indifference Curves for Corruption 
