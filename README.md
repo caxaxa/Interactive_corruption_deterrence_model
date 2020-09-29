@@ -1,6 +1,6 @@
 ## Modelling Domestic Corruption Deterrence Through Self-Reporting and Collaborations
 
-This is a preliminary interactive model of my research. You can find helpfull documentation on the links bellow:
+This is a preliminary interactive model of my research. You can find helpful documentation on the links below:
 
 #### [Resumed Model](document.pdf)
 
