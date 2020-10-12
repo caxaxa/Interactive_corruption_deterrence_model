@@ -9,6 +9,10 @@ This is a preliminary interactive model of my research. You can find helpful doc
 #### [Python Code](Interactive_corruption_deterrence_bokeh.ipynb)
 
 
+$\frac{max}{f_i}$
+
+
+
 ## Agents' Indifference Curves for Corruption 
 
 <html lang="en">
