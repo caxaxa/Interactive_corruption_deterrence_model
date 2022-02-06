@@ -1,4 +1,4 @@
-## Modelling Domestic Corruption Deterrence Through Self-Reporting and Collaborations
+## Modelling Domestic Corruption Deterrence Through Self-Reporting and Collaborations: Exploring the Hold-up Problem
 
 This is a preliminary interactive model of my research. You can find helpful documentation on the links below:
 
